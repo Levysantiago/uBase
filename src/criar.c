@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "bibliotecaCriar.h"
+#include "help.h"
 
 void criar(int argc, char* argv[])
 {
@@ -9,6 +10,9 @@ void criar(int argc, char* argv[])
     FILE *stream1, *ListaArq;
     int i;
 
+    if(argc != 3 || argc != 5)
+        help(2);
+    
     if(argc == 3)
     { // uBase -criar NOME_ARQUIVO
 
@@ -47,6 +51,7 @@ void criar(int argc, char* argv[])
 
     if(argc == 5)//uBase -inserir NOME_ARQUIVO.NOME_ATRIBUTO -tipo Inteiro
         insere(argc, argv);
+
 
     return;
 }
