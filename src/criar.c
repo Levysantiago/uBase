@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "bibliotecaCriar.h"
 #include "help.h"
@@ -54,4 +52,3 @@ void criar(int argc, char* argv[])
 
 
     return;
-}
