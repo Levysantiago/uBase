@@ -19,9 +19,10 @@ void help(int op){
 			printf("-b, -buscar nome_arquivo.nome_atributo -valor x\t Busca o(s) registros com o valor x no atributo nome.atributo\n");
 			break;
 		case 2: //Criar
+			printf("-c, -criar nome_arquivo\t Cria um arquivo\n");
 			break;
 		case 3: //Compactar
-			printf("-cmp, -compactar nome_arquivo -tipo tipo_ordenação\tCompacta um arquivo\n");
+			printf("-cmp, -compactar nome_arquivo -tipo tipo_compactação\tCompacta um arquivo\n");
 			break;
 		case 4://Descompactar
 			printf("-dcmp, -descompactar nome_arquivo\t Descompacta um arquivo do banco\n");

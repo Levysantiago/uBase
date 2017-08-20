@@ -62,7 +62,7 @@ void interpretar(int n, char **vetor){
 				printf("Função não implementada");
 				break;
 			default:
-				printf("Esse tipo de compactação não existe.\n\n");
+				printf("Esse tipo de compactação não existe.\n");
 				help(3);
 				break;
 		}

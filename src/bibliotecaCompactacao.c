@@ -18,7 +18,7 @@ void runLengthEncodeComp(char *arquivoEntrada)
 		help(3);
 		exit(-1);
 	}
-	ptrs = fopen ("dados/saida.ori","wb");
+	ptrs = fopen ("../dados/saida.ori","wb");
 	if(ptrs == NULL){
 		printf("Erro ao abrir o arquivo.\n");
 		exit(-1);

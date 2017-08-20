@@ -8,14 +8,14 @@ char * getCaminhoTabela(char *nomeTabela){
 	int tam;
 	char *caminho = NULL;
 	if(nomeTabela != NULL){
-		tam = strlen(nomeTabela) + 11; //Tamanho do caminho a ser alocado
+		tam = strlen(nomeTabela) + 14; //Tamanho do caminho a ser alocado
 		caminho = (char *) malloc(tam*sizeof(char));
 		if(caminho == NULL){
 			exit(-1);
 			printf("Erro de alocacao!\n");
 		}
 		strcat(nomeTabela,".ori"); //Concatenando o nome da tabela com os dados do caminho
-		strcat(caminho,"dados/");
+		strcat(caminho,"../dados/");
 		strcat(caminho,nomeTabela);
 	}
 
